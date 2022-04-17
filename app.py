@@ -30,7 +30,7 @@ def get_data():
 
     output = []
     for q in cancer_data.find():
-        output.append({'Index': q['Index'], 'Location' : q['Location'], 'Sex' : q['Sex'], 'Year' : q['Year'], 'Mx' : q['Mx'], 'Upper' : q['Upper'], 'Lower' : q['Lower'], 'LOC' : q['LOC']})
+        output.append({'Index': q['Index'], 'Location' : q['Location'], 'Sex' : q['Sex'], 'Year' : q['Year'], 'Mx' : q['Mx'], 'Upper' : q['Upper'], 'Lower' : q['Lower']})
     return jsonify(output)
 
 
